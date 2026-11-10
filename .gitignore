@@ -1,0 +1,6 @@
+/target
+**/*.aof
+/data/runtime/
+*.log
+.DS_Store
+/.idea

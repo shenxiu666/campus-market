@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>校园二手交易推荐 · mini-redis</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">CM</span>
+    <div class="brand-text">
+      <strong>校园二手交易</strong>
+      <span class="sub">mini-redis 存储后端</span>
+    </div>
+  </div>
+  <nav class="tabs" id="tabs">
+    <button class="tab active" data-view="market">市场</button>
+    <button class="tab" data-view="detail">详情 / 发布</button>
+    <button class="tab" data-view="recommend">为你推荐</button>
+    <button class="tab" data-view="demo">演示面板</button>
+  </nav>
+  <div class="status" id="conn-status">
+    <span class="dot" id="conn-dot"></span>
+    <span id="conn-text">连接中…</span>
+  </div>
+</header>
+
+<main id="app">
+
+  <!-- ========== 视图 1：市场 ========== -->
+  <section class="view active" id="view-market">
+    <aside class="filters">
+      <h2>筛选</h2>
+
+      <label class="field">
+        <span>排序</span>
+        <select id="f-sort">
+          <option value="time_desc">最新发布</option>
+          <option value="price_asc">价格从低到高</option>
+          <option value="price_desc">价格从高到低</option>
+          <option value="hot_desc">热度优先</option>
+          <option value="condition_desc">成色优先</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span>关键字</span>
+        <input id="f-q" type="search" placeholder="搜索标题，如：山地车">
+      </label>
+
+      <div class="field">
+        <span>价格区间（元）</span>
+        <div class="range">
+          <input id="f-min" type="number" min="0" step="1" placeholder="最低">
+          <span class="dash">—</span>
+          <input id="f-max" type="number" min="0" step="1" placeholder="最高">
+        </div>
+      </div>
+
+      <div class="field">
+        <span>标签（多选，需全部命中）</span>
+        <div class="taglist" id="f-tags"></div>
+      </div>
+
+      <div class="filter-actions">
+        <button class="btn primary" id="f-apply">应用筛选</button>
+        <button class="btn ghost" id="f-reset">重置</button>
+      </div>
+    </aside>
+
+    <div class="market-main">
+      <div class="market-head">
+        <h2>商品列表</h2>
+        <span class="muted" id="market-count">—</span>
+      </div>
+      <div class="grid" id="product-grid"></div>
+      <div class="pager" id="pager"></div>
+    </div>
+  </section>
+
+  <!-- ========== 视图 2：详情 / 发布 ========== -->
+  <section class="view" id="view-detail">
+    <div class="detail-layout">
+      <div class="panel" id="detail-panel">
+        <h2>商品详情</h2>
+        <p class="muted">从「市场」里点一张卡片查看详情。</p>
+      </div>
+
+      <div class="panel">
+        <h2>发布新商品</h2>
+        <form id="publish-form" class="form" autocomplete="off">
+          <label class="field">
+            <span>标题 <em>*</em></span>
+            <input name="title" type="text" maxlength="80" placeholder="如：捷安特山地车 九成新" required>
+          </label>
+          <label class="field">
+            <span>描述</span>
+            <textarea name="desc" rows="3" maxlength="500" placeholder="成色、购买时间、配件情况…"></textarea>
+          </label>
+          <div class="form-row">
+            <label class="field">
+              <span>价格（元） <em>*</em></span>
+              <input name="price" type="number" min="0.01" step="0.01" placeholder="450.00" required>
+            </label>
+            <label class="field">
+              <span>成色（1-10）</span>
+              <input name="condition" type="number" min="1" max="10" step="1" value="9">
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="field">
+              <span>卖家</span>
+              <select name="seller_id" id="p-seller"></select>
+            </label>
+            <label class="field">
+              <span>校区</span>
+              <input name="campus" type="text" value="前湖校区" maxlength="20">
+            </label>
+          </div>
+          <label class="field">
+            <span>标签（逗号分隔，至少一个） <em>*</em></span>
+            <input name="tags" type="text" placeholder="自行车, 运动" required>
+          </label>
+          <button class="btn primary" type="submit">发布商品</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 视图 3：为你推荐 ========== -->
+  <section class="view" id="view-recommend">
+    <div class="recommend-head">
+      <h2>为你推荐</h2>
+      <label class="field inline">
+        <span>当前用户</span>
+        <select id="rec-user"></select>
+      </label>
+      <label class="field inline">
+        <span>数量</span>
+        <select id="rec-limit">
+          <option>5</option>
+          <option selected>10</option>
+          <option>20</option>
+        </select>
+      </label>
+      <button class="btn primary" id="rec-refresh">刷新推荐</button>
+    </div>
+    <div class="rec-note muted" id="rec-note"></div>
+    <div class="grid" id="rec-grid"></div>
+  </section>
+
+  <!-- ========== 视图 4：演示面板 ========== -->
+  <section class="view" id="view-demo">
+    <div class="demo-grid">
+      <div class="panel">
+        <h2>哈希桶分布</h2>
+        <p class="muted small">来自 <code>INFO</code> 的 <code>dict_distribution</code>，横轴为桶序号，纵轴为该桶链长。</p>
+        <canvas id="dict-canvas" width="640" height="220"></canvas>
+        <div class="stat-strip" id="dict-stats"></div>
+      </div>
+
+      <div class="panel">
+        <h2>REC.STATS</h2>
+        <div class="cards" id="rec-stats-cards"></div>
+        <h3>命中率 / 命令量</h3>
+        <div class="stat-strip" id="core-stats"></div>
+      </div>
+
+      <div class="panel span-2">
+        <h2>排序算法耗时</h2>
+        <div class="table-actions">
+          <label class="field inline">
+            <span>规模 n</span>
+            <select id="bench-n">
+              <option>1000</option>
+              <option>10000</option>
+              <option selected>20000</option>
+              <option>100000</option>
+            </select>
+          </label>
+          <button class="btn primary" id="bench-run">重新测量</button>
+        </div>
+        <table class="data-table" id="bench-table">
+          <thead>
+            <tr><th>算法</th><th>耗时 (ms)</th><th>比较次数</th><th>复杂度</th></tr>
+          </thead>
+          <tbody><tr><td colspan="4" class="muted">点「重新测量」开始</td></tr></tbody>
+        </table>
+        <div class="muted small" id="bench-note"></div>
+      </div>
+
+      <div class="panel span-2">
+        <h2>最近命令流</h2>
+        <p class="muted small">来自 <code>INFO</code> 的 <code>recent_cmd:</code>，最新在前，每秒刷新。</p>
+        <div class="cmd-stream" id="cmd-stream"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="toast-wrap" id="toast-wrap"></div>
+<script src="/app.js"></script>
+</body>
+</html>

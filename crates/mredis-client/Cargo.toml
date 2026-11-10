@@ -1,0 +1,10 @@
+[package]
+name = "mredis-client"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "mini-redis 的 RESP 客户端（被 CLI / Web / 测试复用）"
+
+[dependencies]
+mredis-proto = { workspace = true }
+serde_json = { workspace = true }

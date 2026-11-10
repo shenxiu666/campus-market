@@ -1,0 +1,36 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/mredis-proto",
+    "crates/campus-rec",
+    "crates/mredis-core",
+    "crates/mredis-client",
+    "crates/mredis-cli",
+    "crates/mredis-web",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+authors = ["campus-market team"]
+license = "MIT"
+
+[workspace.dependencies]
+mredis-proto = { path = "crates/mredis-proto" }
+mredis-core = { path = "crates/mredis-core" }
+mredis-client = { path = "crates/mredis-client" }
+campus-rec = { path = "crates/campus-rec" }
+
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rand = "0.9"
+tokio = { version = "1", features = ["full"] }
+axum = "0.8"
+tower = { version = "0.5", features = ["util"] }
+tower-http = { version = "0.6", features = ["cors"] }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1

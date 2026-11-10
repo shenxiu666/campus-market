@@ -1,0 +1,21 @@
+[package]
+name = "mredis-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "mini-redis 的命令行客户端与种子数据导入工具"
+
+[dependencies]
+mredis-client = { workspace = true }
+mredis-proto = { workspace = true }
+campus-rec = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+[[bin]]
+name = "mredis-cli"
+path = "src/bin/mredis-cli.rs"
+
+[[bin]]
+name = "mredis-seed"
+path = "src/bin/mredis-seed.rs"

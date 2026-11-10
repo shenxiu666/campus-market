@@ -1,0 +1,1507 @@
+{
+ "users": [
+  {
+   "id": 1,
+   "name": "张三",
+   "campus": "前湖校区",
+   "interests": [
+    "自行车",
+    "运动",
+    "健身"
+   ],
+   "avg_price": 45000
+  },
+  {
+   "id": 2,
+   "name": "李四",
+   "campus": "前湖校区",
+   "interests": [
+    "教材",
+    "计算机",
+    "考研"
+   ],
+   "avg_price": 4000
+  },
+  {
+   "id": 3,
+   "name": "王五",
+   "campus": "青山湖校区",
+   "interests": [
+    "电子",
+    "数码",
+    "电脑"
+   ],
+   "avg_price": 150000
+  },
+  {
+   "id": 4,
+   "name": "赵六",
+   "campus": "东湖校区",
+   "interests": [
+    "家具",
+    "宿舍",
+    "生活"
+   ],
+   "avg_price": 15000
+  },
+  {
+   "id": 5,
+   "name": "孙七",
+   "campus": "前湖校区",
+   "interests": [
+    "乐器",
+    "音乐"
+   ],
+   "avg_price": 60000
+  },
+  {
+   "id": 6,
+   "name": "周八",
+   "campus": "医学部校区",
+   "interests": [
+    "图书",
+    "文学",
+    "教材"
+   ],
+   "avg_price": 3000
+  },
+  {
+   "id": 7,
+   "name": "吴九",
+   "campus": "青山湖校区",
+   "interests": [],
+   "avg_price": 0
+  },
+  {
+   "id": 8,
+   "name": "郑十",
+   "campus": "东湖校区",
+   "interests": [
+    "家电",
+    "宿舍",
+    "数码"
+   ],
+   "avg_price": 20000
+  }
+ ],
+ "products": [
+  {
+   "id": 1,
+   "title": "捷安特山地车",
+   "desc": "捷安特山地车，七成新，功能完好，可送到宿舍楼下。",
+   "price_cents": 38800,
+   "tags": [
+    "自行车",
+    "运动"
+   ],
+   "seller_id": 1,
+   "condition": 7,
+   "campus": "前湖校区",
+   "created_at": 1794083524,
+   "status": "onsale"
+  },
+  {
+   "id": 2,
+   "title": "美利达公路车",
+   "desc": "美利达公路车，九成新，配件齐全，支持当面交易。",
+   "price_cents": 58000,
+   "tags": [
+    "自行车",
+    "运动"
+   ],
+   "seller_id": 2,
+   "condition": 9,
+   "campus": "青山湖校区",
+   "created_at": 1793518347,
+   "status": "onsale"
+  },
+  {
+   "id": 3,
+   "title": "折叠自行车",
+   "desc": "折叠自行车，九五新，轻微使用痕迹，仅限本校交易。",
+   "price_cents": 70400,
+   "tags": [
+    "自行车",
+    "运动"
+   ],
+   "seller_id": 3,
+   "condition": 10,
+   "campus": "东湖校区",
+   "created_at": 1793386420,
+   "status": "onsale"
+  },
+  {
+   "id": 4,
+   "title": "死飞单车",
+   "desc": "死飞单车，九五新，配件齐全，周末可约。",
+   "price_cents": 50900,
+   "tags": [
+    "自行车",
+    "运动"
+   ],
+   "seller_id": 4,
+   "condition": 10,
+   "campus": "医学部校区",
+   "created_at": 1793606054,
+   "status": "onsale"
+  },
+  {
+   "id": 5,
+   "title": "电动滑板车",
+   "desc": "电动滑板车，七成新，无划痕，可送到宿舍楼下。",
+   "price_cents": 79200,
+   "tags": [
+    "自行车",
+    "运动"
+   ],
+   "seller_id": 5,
+   "condition": 7,
+   "campus": "前湖校区",
+   "created_at": 1791692801,
+   "status": "onsale"
+  },
+  {
+   "id": 6,
+   "title": "通勤自行车",
+   "desc": "通勤自行车，八成新，可小刀，周末可约。",
+   "price_cents": 50600,
+   "tags": [
+    "自行车",
+    "通勤"
+   ],
+   "seller_id": 6,
+   "condition": 8,
+   "campus": "青山湖校区",
+   "created_at": 1793220959,
+   "status": "onsale"
+  },
+  {
+   "id": 7,
+   "title": "二手电动车",
+   "desc": "二手电动车，九五新，配件齐全，可送到宿舍楼下。",
+   "price_cents": 30200,
+   "tags": [
+    "自行车",
+    "通勤"
+   ],
+   "seller_id": 1,
+   "condition": 10,
+   "campus": "东湖校区",
+   "created_at": 1792955832,
+   "status": "onsale"
+  },
+  {
+   "id": 8,
+   "title": "《算法导论》第三版",
+   "desc": "《算法导论》第三版，八成新，功能完好，支持当面交易。",
+   "price_cents": 2700,
+   "tags": [
+    "教材",
+    "计算机"
+   ],
+   "seller_id": 2,
+   "condition": 8,
+   "campus": "医学部校区",
+   "created_at": 1791966708,
+   "status": "onsale"
+  },
+  {
+   "id": 9,
+   "title": "《深入理解计算机系统》",
+   "desc": "《深入理解计算机系统》，八成新，无划痕，周末可约。",
+   "price_cents": 2800,
+   "tags": [
+    "教材",
+    "计算机"
+   ],
+   "seller_id": 3,
+   "condition": 8,
+   "campus": "前湖校区",
+   "created_at": 1791714360,
+   "status": "onsale"
+  },
+  {
+   "id": 10,
+   "title": "《数据结构与算法分析》",
+   "desc": "《数据结构与算法分析》，几乎全新，可小刀，可送到宿舍楼下。",
+   "price_cents": 4100,
+   "tags": [
+    "教材",
+    "计算机"
+   ],
+   "seller_id": 4,
+   "condition": 10,
+   "campus": "青山湖校区",
+   "created_at": 1793010918,
+   "status": "onsale"
+  },
+  {
+   "id": 11,
+   "title": "《操作系统概念》",
+   "desc": "《操作系统概念》，七成新，配件齐全，支持当面交易。",
+   "price_cents": 7500,
+   "tags": [
+    "教材",
+    "计算机"
+   ],
+   "seller_id": 5,
+   "condition": 7,
+   "campus": "东湖校区",
+   "created_at": 1792397772,
+   "status": "onsale"
+  },
+  {
+   "id": 12,
+   "title": "《高等数学》上下册",
+   "desc": "《高等数学》上下册，九成新，轻微使用痕迹，支持当面交易。",
+   "price_cents": 4000,
+   "tags": [
+    "教材",
+    "数学"
+   ],
+   "seller_id": 6,
+   "condition": 9,
+   "campus": "医学部校区",
+   "created_at": 1793510462,
+   "status": "onsale"
+  },
+  {
+   "id": 13,
+   "title": "《线性代数》同济版",
+   "desc": "《线性代数》同济版，九成新，无划痕，支持当面交易。",
+   "price_cents": 1000,
+   "tags": [
+    "教材",
+    "数学"
+   ],
+   "seller_id": 7,
+   "condition": 9,
+   "campus": "前湖校区",
+   "created_at": 1793454272,
+   "status": "onsale"
+  },
+  {
+   "id": 14,
+   "title": "《概率论与数理统计》",
+   "desc": "《概率论与数理统计》，七成新，无划痕，可送到宿舍楼下。",
+   "price_cents": 1600,
+   "tags": [
+    "教材",
+    "数学"
+   ],
+   "seller_id": 8,
+   "condition": 7,
+   "campus": "青山湖校区",
+   "created_at": 1793998339,
+   "status": "onsale"
+  },
+  {
+   "id": 15,
+   "title": "四级真题全套",
+   "desc": "四级真题全套，七成新，功能完好，周末可约。",
+   "price_cents": 2400,
+   "tags": [
+    "教材",
+    "英语"
+   ],
+   "seller_id": 1,
+   "condition": 7,
+   "campus": "东湖校区",
+   "created_at": 1792262142,
+   "status": "onsale"
+  },
+  {
+   "id": 16,
+   "title": "雅思真题 4-17",
+   "desc": "雅思真题 4-17，九五新，功能完好，可送到宿舍楼下。",
+   "price_cents": 1800,
+   "tags": [
+    "教材",
+    "英语"
+   ],
+   "seller_id": 3,
+   "condition": 10,
+   "campus": "医学部校区",
+   "created_at": 1791695556,
+   "status": "onsale"
+  },
+  {
+   "id": 17,
+   "title": "考研英语词汇书",
+   "desc": "考研英语词汇书，八成新，功能完好，支持当面交易。",
+   "price_cents": 2400,
+   "tags": [
+    "教材",
+    "英语"
+   ],
+   "seller_id": 5,
+   "condition": 8,
+   "campus": "前湖校区",
+   "created_at": 1792447685,
+   "status": "onsale"
+  },
+  {
+   "id": 18,
+   "title": "iPad 第九代 64G",
+   "desc": "iPad 第九代 64G，九五新，功能完好，仅限本校交易。",
+   "price_cents": 249700,
+   "tags": [
+    "电子",
+    "数码"
+   ],
+   "seller_id": 2,
+   "condition": 10,
+   "campus": "青山湖校区",
+   "created_at": 1792750146,
+   "status": "onsale"
+  },
+  {
+   "id": 19,
+   "title": "小米平板 5",
+   "desc": "小米平板 5，七成新，无划痕，可送到宿舍楼下。",
+   "price_cents": 182800,
+   "tags": [
+    "电子",
+    "数码"
+   ],
+   "seller_id": 4,
+   "condition": 7,
+   "campus": "东湖校区",
+   "created_at": 1792364885,
+   "status": "onsale"
+  },
+  {
+   "id": 20,
+   "title": "Kindle 电子书阅读器",
+   "desc": "Kindle 电子书阅读器，八成新，配件齐全，支持当面交易。",
+   "price_cents": 204100,
+   "tags": [
+    "电子",
+    "数码"
+   ],
+   "seller_id": 6,
+   "condition": 8,
+   "campus": "医学部校区",
+   "created_at": 1792521556,
+   "status": "onsale"
+  },
+  {
+   "id": 21,
+   "title": "蓝牙耳机",
+   "desc": "蓝牙耳机，八成新，无划痕，周末可约。",
+   "price_cents": 224100,
+   "tags": [
+    "电子",
+    "数码"
+   ],
+   "seller_id": 1,
+   "condition": 8,
+   "campus": "前湖校区",
+   "created_at": 1793044872,
+   "status": "onsale"
+  },
+  {
+   "id": 22,
+   "title": "机械键盘",
+   "desc": "机械键盘，几乎全新，功能完好，周末可约。",
+   "price_cents": 107000,
+   "tags": [
+    "电子",
+    "数码"
+   ],
+   "seller_id": 2,
+   "condition": 10,
+   "campus": "青山湖校区",
+   "created_at": 1793992429,
+   "status": "onsale"
+  },
+  {
+   "id": 23,
+   "title": "联想 ThinkPad T480",
+   "desc": "联想 ThinkPad T480，八成新，配件齐全，周末可约。",
+   "price_cents": 513100,
+   "tags": [
+    "电子",
+    "电脑"
+   ],
+   "seller_id": 3,
+   "condition": 8,
+   "campus": "东湖校区",
+   "created_at": 1791884935,
+   "status": "onsale"
+  },
+  {
+   "id": 24,
+   "title": "罗技 MX Master 3",
+   "desc": "罗技 MX Master 3，九五新，配件齐全，可送到宿舍楼下。",
+   "price_cents": 366900,
+   "tags": [
+    "电子",
+    "电脑"
+   ],
+   "seller_id": 4,
+   "condition": 10,
+   "campus": "医学部校区",
+   "created_at": 1792949386,
+   "status": "onsale"
+  },
+  {
+   "id": 25,
+   "title": "27 寸显示器",
+   "desc": "27 寸显示器，几乎全新，轻微使用痕迹，可送到宿舍楼下。",
+   "price_cents": 263300,
+   "tags": [
+    "电子",
+    "电脑"
+   ],
+   "seller_id": 5,
+   "condition": 10,
+   "campus": "前湖校区",
+   "created_at": 1792144547,
+   "status": "onsale"
+  },
+  {
+   "id": 26,
+   "title": "游戏鼠标",
+   "desc": "游戏鼠标，几乎全新，配件齐全，周末可约。",
+   "price_cents": 483600,
+   "tags": [
+    "电子",
+    "电脑"
+   ],
+   "seller_id": 6,
+   "condition": 10,
+   "campus": "青山湖校区",
+   "created_at": 1791830740,
+   "status": "onsale"
+  },
+  {
+   "id": 27,
+   "title": "宿舍小冰箱",
+   "desc": "宿舍小冰箱，几乎全新，配件齐全，周末可约。",
+   "price_cents": 34300,
+   "tags": [
+    "家电",
+    "宿舍"
+   ],
+   "seller_id": 1,
+   "condition": 10,
+   "campus": "东湖校区",
+   "created_at": 1792942120,
+   "status": "onsale"
+  },
+  {
+   "id": 28,
+   "title": "电热水壶",
+   "desc": "电热水壶，九五新，无划痕，周末可约。",
+   "price_cents": 39000,
+   "tags": [
+    "家电",
+    "宿舍"
+   ],
+   "seller_id": 2,
+   "condition": 10,
+   "campus": "医学部校区",
+   "created_at": 1792307399,
+   "status": "onsale"
+  },
+  {
+   "id": 29,
+   "title": "桌面小风扇",
+   "desc": "桌面小风扇，九成新，轻微使用痕迹，可送到宿舍楼下。",
+   "price_cents": 19300,
+   "tags": [
+    "家电",
+    "宿舍"
+   ],
+   "seller_id": 3,
+   "condition": 9,
+   "campus": "前湖校区",
+   "created_at": 1793403539,
+   "status": "onsale"
+  },
+  {
+   "id": 30,
+   "title": "加湿器",
+   "desc": "加湿器，七成新，配件齐全，支持当面交易。",
+   "price_cents": 29100,
+   "tags": [
+    "家电",
+    "宿舍"
+   ],
+   "seller_id": 4,
+   "condition": 7,
+   "campus": "青山湖校区",
+   "created_at": 1791864363,
+   "status": "onsale"
+  },
+  {
+   "id": 31,
+   "title": "吹风机",
+   "desc": "吹风机，八成新，功能完好，支持当面交易。",
+   "price_cents": 23200,
+   "tags": [
+    "家电",
+    "宿舍"
+   ],
+   "seller_id": 5,
+   "condition": 8,
+   "campus": "东湖校区",
+   "created_at": 1791763254,
+   "status": "onsale"
+  },
+  {
+   "id": 32,
+   "title": "宿舍床帘",
+   "desc": "宿舍床帘，九五新，配件齐全，支持当面交易。",
+   "price_cents": 2000,
+   "tags": [
+    "家具",
+    "宿舍"
+   ],
+   "seller_id": 6,
+   "condition": 10,
+   "campus": "医学部校区",
+   "created_at": 1792452079,
+   "status": "onsale"
+  },
+  {
+   "id": 33,
+   "title": "折叠书桌",
+   "desc": "折叠书桌，八成新，轻微使用痕迹，可送到宿舍楼下。",
+   "price_cents": 17900,
+   "tags": [
+    "家具",
+    "宿舍"
+   ],
+   "seller_id": 7,
+   "condition": 8,
+   "campus": "前湖校区",
+   "created_at": 1792253907,
+   "status": "onsale"
+  },
+  {
+   "id": 34,
+   "title": "收纳箱三件套",
+   "desc": "收纳箱三件套，几乎全新，无划痕，仅限本校交易。",
+   "price_cents": 27000,
+   "tags": [
+    "家具",
+    "宿舍"
+   ],
+   "seller_id": 8,
+   "condition": 10,
+   "campus": "青山湖校区",
+   "created_at": 1793937917,
+   "status": "onsale"
+  },
+  {
+   "id": 35,
+   "title": "人体工学椅",
+   "desc": "人体工学椅，九成新，配件齐全，可送到宿舍楼下。",
+   "price_cents": 18900,
+   "tags": [
+    "家具",
+    "宿舍"
+   ],
+   "seller_id": 1,
+   "condition": 9,
+   "campus": "东湖校区",
+   "created_at": 1791770595,
+   "status": "onsale"
+  },
+  {
+   "id": 36,
+   "title": "置物架",
+   "desc": "置物架，八成新，无划痕，周末可约。",
+   "price_cents": 8100,
+   "tags": [
+    "家具",
+    "宿舍"
+   ],
+   "seller_id": 3,
+   "condition": 8,
+   "campus": "医学部校区",
+   "created_at": 1793706139,
+   "status": "onsale"
+  },
+  {
+   "id": 37,
+   "title": "哑铃 15kg 一对",
+   "desc": "哑铃 15kg 一对，七成新，轻微使用痕迹，可送到宿舍楼下。",
+   "price_cents": 4500,
+   "tags": [
+    "运动",
+    "健身"
+   ],
+   "seller_id": 5,
+   "condition": 7,
+   "campus": "前湖校区",
+   "created_at": 1793934183,
+   "status": "onsale"
+  },
+  {
+   "id": 38,
+   "title": "瑜伽垫",
+   "desc": "瑜伽垫，七成新，无划痕，可送到宿舍楼下。",
+   "price_cents": 29700,
+   "tags": [
+    "运动",
+    "健身"
+   ],
+   "seller_id": 2,
+   "condition": 7,
+   "campus": "青山湖校区",
+   "created_at": 1791693209,
+   "status": "onsale"
+  },
+  {
+   "id": 39,
+   "title": "羽毛球拍",
+   "desc": "羽毛球拍，七成新，配件齐全，周末可约。",
+   "price_cents": 30600,
+   "tags": [
+    "运动",
+    "健身"
+   ],
+   "seller_id": 4,
+   "condition": 7,
+   "campus": "东湖校区",
+   "created_at": 1793188155,
+   "status": "onsale"
+  },
+  {
+   "id": 40,
+   "title": "篮球",
+   "desc": "篮球，九五新，无划痕，可送到宿舍楼下。",
+   "price_cents": 49700,
+   "tags": [
+    "运动",
+    "健身"
+   ],
+   "seller_id": 6,
+   "condition": 10,
+   "campus": "医学部校区",
+   "created_at": 1794160397,
+   "status": "onsale"
+  },
+  {
+   "id": 41,
+   "title": "跑步机",
+   "desc": "跑步机，八成新，无划痕，可送到宿舍楼下。",
+   "price_cents": 28700,
+   "tags": [
+    "运动",
+    "健身"
+   ],
+   "seller_id": 1,
+   "condition": 8,
+   "campus": "前湖校区",
+   "created_at": 1792788055,
+   "status": "onsale"
+  },
+  {
+   "id": 42,
+   "title": "尤克里里",
+   "desc": "尤克里里，九成新，配件齐全，周末可约。",
+   "price_cents": 115000,
+   "tags": [
+    "乐器",
+    "音乐"
+   ],
+   "seller_id": 2,
+   "condition": 9,
+   "campus": "青山湖校区",
+   "created_at": 1791956318,
+   "status": "onsale"
+  },
+  {
+   "id": 43,
+   "title": "民谣吉他",
+   "desc": "民谣吉他，八成新，可小刀，周末可约。",
+   "price_cents": 130400,
+   "tags": [
+    "乐器",
+    "音乐"
+   ],
+   "seller_id": 3,
+   "condition": 8,
+   "campus": "东湖校区",
+   "created_at": 1793350358,
+   "status": "onsale"
+  },
+  {
+   "id": 44,
+   "title": "电子琴",
+   "desc": "电子琴，七成新，可小刀，周末可约。",
+   "price_cents": 142900,
+   "tags": [
+    "乐器",
+    "音乐"
+   ],
+   "seller_id": 4,
+   "condition": 7,
+   "campus": "医学部校区",
+   "created_at": 1793902756,
+   "status": "onsale"
+  },
+  {
+   "id": 45,
+   "title": "口琴",
+   "desc": "口琴，七成新，无划痕，支持当面交易。",
+   "price_cents": 141500,
+   "tags": [
+    "乐器",
+    "音乐"
+   ],
+   "seller_id": 5,
+   "condition": 7,
+   "campus": "前湖校区",
+   "created_at": 1792045016,
+   "status": "onsale"
+  },
+  {
+   "id": 46,
+   "title": "羽绒服",
+   "desc": "羽绒服，九五新，功能完好，可送到宿舍楼下。",
+   "price_cents": 17400,
+   "tags": [
+    "衣物",
+    "二手"
+   ],
+   "seller_id": 6,
+   "condition": 10,
+   "campus": "青山湖校区",
+   "created_at": 1793305337,
+   "status": "onsale"
+  },
+  {
+   "id": 47,
+   "title": "运动外套",
+   "desc": "运动外套，七成新，功能完好，可送到宿舍楼下。",
+   "price_cents": 4700,
+   "tags": [
+    "衣物",
+    "二手"
+   ],
+   "seller_id": 1,
+   "condition": 7,
+   "campus": "东湖校区",
+   "created_at": 1792217102,
+   "status": "onsale"
+  },
+  {
+   "id": 48,
+   "title": "正装一套",
+   "desc": "正装一套，几乎全新，无划痕，可送到宿舍楼下。",
+   "price_cents": 18200,
+   "tags": [
+    "衣物",
+    "二手"
+   ],
+   "seller_id": 2,
+   "condition": 10,
+   "campus": "医学部校区",
+   "created_at": 1792590792,
+   "status": "onsale"
+  },
+  {
+   "id": 49,
+   "title": "军训服",
+   "desc": "军训服，九五新，轻微使用痕迹，周末可约。",
+   "price_cents": 7200,
+   "tags": [
+    "衣物",
+    "二手"
+   ],
+   "seller_id": 3,
+   "condition": 10,
+   "campus": "前湖校区",
+   "created_at": 1793467694,
+   "status": "onsale"
+  },
+  {
+   "id": 50,
+   "title": "《活着》余华",
+   "desc": "《活着》余华，几乎全新，无划痕，支持当面交易。",
+   "price_cents": 1800,
+   "tags": [
+    "图书",
+    "文学"
+   ],
+   "seller_id": 4,
+   "condition": 10,
+   "campus": "青山湖校区",
+   "created_at": 1793601154,
+   "status": "onsale"
+  },
+  {
+   "id": 51,
+   "title": "《三体》全集",
+   "desc": "《三体》全集，几乎全新，功能完好，支持当面交易。",
+   "price_cents": 2500,
+   "tags": [
+    "图书",
+    "文学"
+   ],
+   "seller_id": 5,
+   "condition": 10,
+   "campus": "东湖校区",
+   "created_at": 1793264069,
+   "status": "onsale"
+  },
+  {
+   "id": 52,
+   "title": "《百年孤独》",
+   "desc": "《百年孤独》，九五新，无划痕，可送到宿舍楼下。",
+   "price_cents": 5700,
+   "tags": [
+    "图书",
+    "文学"
+   ],
+   "seller_id": 6,
+   "condition": 10,
+   "campus": "医学部校区",
+   "created_at": 1794127882,
+   "status": "onsale"
+  },
+  {
+   "id": 53,
+   "title": "《人类简史》",
+   "desc": "《人类简史》，九五新，无划痕，周末可约。",
+   "price_cents": 3700,
+   "tags": [
+    "图书",
+    "文学"
+   ],
+   "seller_id": 7,
+   "condition": 10,
+   "campus": "前湖校区",
+   "created_at": 1792020112,
+   "status": "onsale"
+  },
+  {
+   "id": 54,
+   "title": "考研数学复习全书",
+   "desc": "考研数学复习全书，九五新，轻微使用痕迹，支持当面交易。",
+   "price_cents": 11200,
+   "tags": [
+    "考研",
+    "资料"
+   ],
+   "seller_id": 8,
+   "condition": 10,
+   "campus": "青山湖校区",
+   "created_at": 1793216679,
+   "status": "onsale"
+  },
+  {
+   "id": 55,
+   "title": "考研政治肖四肖八",
+   "desc": "考研政治肖四肖八，八成新，功能完好，可送到宿舍楼下。",
+   "price_cents": 3900,
+   "tags": [
+    "考研",
+    "资料"
+   ],
+   "seller_id": 1,
+   "condition": 8,
+   "campus": "东湖校区",
+   "created_at": 1794216222,
+   "status": "onsale"
+  },
+  {
+   "id": 56,
+   "title": "专业课真题汇编",
+   "desc": "专业课真题汇编，八成新，无划痕，仅限本校交易。",
+   "price_cents": 9300,
+   "tags": [
+    "考研",
+    "资料"
+   ],
+   "seller_id": 3,
+   "condition": 8,
+   "campus": "医学部校区",
+   "created_at": 1791766481,
+   "status": "onsale"
+  },
+  {
+   "id": 57,
+   "title": "台灯",
+   "desc": "台灯，七成新，无划痕，可送到宿舍楼下。",
+   "price_cents": 4200,
+   "tags": [
+    "生活",
+    "日用"
+   ],
+   "seller_id": 5,
+   "condition": 7,
+   "campus": "前湖校区",
+   "created_at": 1792735559,
+   "status": "onsale"
+  },
+  {
+   "id": 58,
+   "title": "插线板",
+   "desc": "插线板，九成新，功能完好，周末可约。",
+   "price_cents": 1900,
+   "tags": [
+    "生活",
+    "日用"
+   ],
+   "seller_id": 2,
+   "condition": 9,
+   "campus": "青山湖校区",
+   "created_at": 1791807706,
+   "status": "onsale"
+  },
+  {
+   "id": 59,
+   "title": "水杯",
+   "desc": "水杯，八成新，配件齐全，仅限本校交易。",
+   "price_cents": 600,
+   "tags": [
+    "生活",
+    "日用"
+   ],
+   "seller_id": 4,
+   "condition": 8,
+   "campus": "东湖校区",
+   "created_at": 1793527091,
+   "status": "onsale"
+  },
+  {
+   "id": 60,
+   "title": "雨伞",
+   "desc": "雨伞，七成新，可小刀，可送到宿舍楼下。",
+   "price_cents": 5900,
+   "tags": [
+    "生活",
+    "日用"
+   ],
+   "seller_id": 6,
+   "condition": 7,
+   "campus": "医学部校区",
+   "created_at": 1792849055,
+   "status": "onsale"
+  },
+  {
+   "id": 61,
+   "title": "行李箱",
+   "desc": "行李箱，几乎全新，配件齐全，支持当面交易。",
+   "price_cents": 3900,
+   "tags": [
+    "生活",
+    "日用"
+   ],
+   "seller_id": 1,
+   "condition": 10,
+   "campus": "前湖校区",
+   "created_at": 1792903822,
+   "status": "onsale"
+  },
+  {
+   "id": 62,
+   "title": "充电宝 20000mAh",
+   "desc": "充电宝 20000mAh，几乎全新，可小刀，可送到宿舍楼下。",
+   "price_cents": 6700,
+   "tags": [
+    "数码",
+    "配件"
+   ],
+   "seller_id": 2,
+   "condition": 10,
+   "campus": "青山湖校区",
+   "created_at": 1792624828,
+   "status": "onsale"
+  },
+  {
+   "id": 63,
+   "title": "Type-C 数据线",
+   "desc": "Type-C 数据线，几乎全新，功能完好，周末可约。",
+   "price_cents": 15400,
+   "tags": [
+    "数码",
+    "配件"
+   ],
+   "seller_id": 3,
+   "condition": 10,
+   "campus": "东湖校区",
+   "created_at": 1793442565,
+   "status": "onsale"
+  },
+  {
+   "id": 64,
+   "title": "手机支架",
+   "desc": "手机支架，九成新，功能完好，可送到宿舍楼下。",
+   "price_cents": 15800,
+   "tags": [
+    "数码",
+    "配件"
+   ],
+   "seller_id": 4,
+   "condition": 9,
+   "campus": "医学部校区",
+   "created_at": 1793190957,
+   "status": "onsale"
+  }
+ ],
+ "events": [
+  {
+   "user_id": 7,
+   "product_id": 3,
+   "kind": "view",
+   "ts": 1792555200
+  },
+  {
+   "user_id": 7,
+   "product_id": 33,
+   "kind": "view",
+   "ts": 1792814400
+  },
+  {
+   "user_id": 2,
+   "product_id": 8,
+   "kind": "view",
+   "ts": 1793419284
+  },
+  {
+   "user_id": 2,
+   "product_id": 9,
+   "kind": "fav",
+   "ts": 1793419354
+  },
+  {
+   "user_id": 2,
+   "product_id": 10,
+   "kind": "click",
+   "ts": 1793419501
+  },
+  {
+   "user_id": 2,
+   "product_id": 11,
+   "kind": "fav",
+   "ts": 1793419674
+  },
+  {
+   "user_id": 2,
+   "product_id": 12,
+   "kind": "view",
+   "ts": 1793428238
+  },
+  {
+   "user_id": 2,
+   "product_id": 13,
+   "kind": "view",
+   "ts": 1793428367
+  },
+  {
+   "user_id": 2,
+   "product_id": 14,
+   "kind": "view",
+   "ts": 1793428409
+  },
+  {
+   "user_id": 2,
+   "product_id": 15,
+   "kind": "click",
+   "ts": 1793428583
+  },
+  {
+   "user_id": 2,
+   "product_id": 16,
+   "kind": "view",
+   "ts": 1793428674
+  },
+  {
+   "user_id": 4,
+   "product_id": 27,
+   "kind": "click",
+   "ts": 1793505635
+  },
+  {
+   "user_id": 6,
+   "product_id": 50,
+   "kind": "view",
+   "ts": 1793505756
+  },
+  {
+   "user_id": 4,
+   "product_id": 28,
+   "kind": "click",
+   "ts": 1793505790
+  },
+  {
+   "user_id": 6,
+   "product_id": 51,
+   "kind": "click",
+   "ts": 1793505831
+  },
+  {
+   "user_id": 4,
+   "product_id": 29,
+   "kind": "view",
+   "ts": 1793505868
+  },
+  {
+   "user_id": 4,
+   "product_id": 30,
+   "kind": "view",
+   "ts": 1793505989
+  },
+  {
+   "user_id": 6,
+   "product_id": 52,
+   "kind": "click",
+   "ts": 1793516616
+  },
+  {
+   "user_id": 6,
+   "product_id": 53,
+   "kind": "fav",
+   "ts": 1793516662
+  },
+  {
+   "user_id": 4,
+   "product_id": 31,
+   "kind": "click",
+   "ts": 1793522792
+  },
+  {
+   "user_id": 4,
+   "product_id": 32,
+   "kind": "click",
+   "ts": 1793522964
+  },
+  {
+   "user_id": 4,
+   "product_id": 33,
+   "kind": "click",
+   "ts": 1793523033
+  },
+  {
+   "user_id": 4,
+   "product_id": 34,
+   "kind": "view",
+   "ts": 1793523123
+  },
+  {
+   "user_id": 5,
+   "product_id": 42,
+   "kind": "click",
+   "ts": 1793851319
+  },
+  {
+   "user_id": 1,
+   "product_id": 1,
+   "kind": "view",
+   "ts": 1793851323
+  },
+  {
+   "user_id": 5,
+   "product_id": 43,
+   "kind": "click",
+   "ts": 1793851469
+  },
+  {
+   "user_id": 1,
+   "product_id": 2,
+   "kind": "view",
+   "ts": 1793851499
+  },
+  {
+   "user_id": 1,
+   "product_id": 3,
+   "kind": "click",
+   "ts": 1793851599
+  },
+  {
+   "user_id": 1,
+   "product_id": 4,
+   "kind": "click",
+   "ts": 1793851642
+  },
+  {
+   "user_id": 5,
+   "product_id": 44,
+   "kind": "fav",
+   "ts": 1793858323
+  },
+  {
+   "user_id": 5,
+   "product_id": 45,
+   "kind": "view",
+   "ts": 1793858417
+  },
+  {
+   "user_id": 1,
+   "product_id": 5,
+   "kind": "click",
+   "ts": 1793860160
+  },
+  {
+   "user_id": 1,
+   "product_id": 6,
+   "kind": "click",
+   "ts": 1793860272
+  },
+  {
+   "user_id": 1,
+   "product_id": 7,
+   "kind": "view",
+   "ts": 1793860372
+  },
+  {
+   "user_id": 1,
+   "product_id": 37,
+   "kind": "click",
+   "ts": 1793860452
+  },
+  {
+   "user_id": 1,
+   "product_id": 38,
+   "kind": "fav",
+   "ts": 1793860573
+  },
+  {
+   "user_id": 7,
+   "product_id": 15,
+   "kind": "view",
+   "ts": 1793937600
+  },
+  {
+   "user_id": 8,
+   "product_id": 18,
+   "kind": "click",
+   "ts": 1793937649
+  },
+  {
+   "user_id": 3,
+   "product_id": 18,
+   "kind": "click",
+   "ts": 1793937654
+  },
+  {
+   "user_id": 3,
+   "product_id": 19,
+   "kind": "view",
+   "ts": 1793937678
+  },
+  {
+   "user_id": 8,
+   "product_id": 19,
+   "kind": "click",
+   "ts": 1793937701
+  },
+  {
+   "user_id": 8,
+   "product_id": 20,
+   "kind": "view",
+   "ts": 1793937745
+  },
+  {
+   "user_id": 3,
+   "product_id": 20,
+   "kind": "click",
+   "ts": 1793937783
+  },
+  {
+   "user_id": 3,
+   "product_id": 21,
+   "kind": "fav",
+   "ts": 1793937820
+  },
+  {
+   "user_id": 3,
+   "product_id": 22,
+   "kind": "click",
+   "ts": 1793945081
+  },
+  {
+   "user_id": 3,
+   "product_id": 23,
+   "kind": "view",
+   "ts": 1793945211
+  },
+  {
+   "user_id": 3,
+   "product_id": 24,
+   "kind": "fav",
+   "ts": 1793945257
+  },
+  {
+   "user_id": 3,
+   "product_id": 25,
+   "kind": "view",
+   "ts": 1793945392
+  },
+  {
+   "user_id": 8,
+   "product_id": 21,
+   "kind": "view",
+   "ts": 1793956140
+  },
+  {
+   "user_id": 8,
+   "product_id": 22,
+   "kind": "click",
+   "ts": 1793956288
+  },
+  {
+   "user_id": 8,
+   "product_id": 27,
+   "kind": "click",
+   "ts": 1793956400
+  },
+  {
+   "user_id": 8,
+   "product_id": 28,
+   "kind": "view",
+   "ts": 1793956464
+  },
+  {
+   "user_id": 7,
+   "product_id": 1,
+   "kind": "view",
+   "ts": 1794020471
+  },
+  {
+   "user_id": 7,
+   "product_id": 2,
+   "kind": "view",
+   "ts": 1794020491
+  },
+  {
+   "user_id": 7,
+   "product_id": 20,
+   "kind": "view",
+   "ts": 1794020527
+  },
+  {
+   "user_id": 6,
+   "product_id": 1,
+   "kind": "view",
+   "ts": 1794021393
+  },
+  {
+   "user_id": 6,
+   "product_id": 2,
+   "kind": "view",
+   "ts": 1794021555
+  },
+  {
+   "user_id": 6,
+   "product_id": 20,
+   "kind": "fav",
+   "ts": 1794021584
+  },
+  {
+   "user_id": 5,
+   "product_id": 1,
+   "kind": "click",
+   "ts": 1794022356
+  },
+  {
+   "user_id": 5,
+   "product_id": 2,
+   "kind": "click",
+   "ts": 1794022486
+  },
+  {
+   "user_id": 5,
+   "product_id": 20,
+   "kind": "click",
+   "ts": 1794022534
+  },
+  {
+   "user_id": 4,
+   "product_id": 1,
+   "kind": "view",
+   "ts": 1794023254
+  },
+  {
+   "user_id": 4,
+   "product_id": 2,
+   "kind": "click",
+   "ts": 1794023352
+  },
+  {
+   "user_id": 4,
+   "product_id": 20,
+   "kind": "view",
+   "ts": 1794023420
+  },
+  {
+   "user_id": 2,
+   "product_id": 1,
+   "kind": "fav",
+   "ts": 1794024120
+  },
+  {
+   "user_id": 2,
+   "product_id": 2,
+   "kind": "view",
+   "ts": 1794024191
+  },
+  {
+   "user_id": 2,
+   "product_id": 20,
+   "kind": "click",
+   "ts": 1794024332
+  },
+  {
+   "user_id": 8,
+   "product_id": 21,
+   "kind": "click",
+   "ts": 1794193235
+  },
+  {
+   "user_id": 8,
+   "product_id": 22,
+   "kind": "view",
+   "ts": 1794193331
+  },
+  {
+   "user_id": 8,
+   "product_id": 62,
+   "kind": "view",
+   "ts": 1794193387
+  },
+  {
+   "user_id": 3,
+   "product_id": 21,
+   "kind": "fav",
+   "ts": 1794195086
+  },
+  {
+   "user_id": 3,
+   "product_id": 22,
+   "kind": "click",
+   "ts": 1794195209
+  },
+  {
+   "user_id": 3,
+   "product_id": 62,
+   "kind": "fav",
+   "ts": 1794195276
+  },
+  {
+   "user_id": 1,
+   "product_id": 21,
+   "kind": "view",
+   "ts": 1794196914
+  },
+  {
+   "user_id": 1,
+   "product_id": 22,
+   "kind": "view",
+   "ts": 1794197011
+  },
+  {
+   "user_id": 1,
+   "product_id": 62,
+   "kind": "click",
+   "ts": 1794197070
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+[package]
+name = "mredis-proto"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "RESP2 协议编解码：mini-redis 的网络层基础（零第三方依赖）"
+
+[dependencies]

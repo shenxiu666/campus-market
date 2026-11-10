@@ -1,0 +1,13 @@
+[package]
+name = "campus-rec"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "校园二手交易推荐算法库：排序 / 倒排索引 / Jaccard 相似度 / 协同过滤"
+
+[dependencies]
+serde = { workspace = true }
+
+[dev-dependencies]
+rand = { workspace = true }
+serde_json = { workspace = true }

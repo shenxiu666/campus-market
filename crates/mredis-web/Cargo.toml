@@ -1,0 +1,28 @@
+[package]
+name = "mredis-web"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "mini-redis 的 Web 演示界面与 REST 网关（axum）"
+
+[dependencies]
+mredis-client = { workspace = true }
+mredis-proto = { workspace = true }
+campus-rec = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+axum = { workspace = true }
+tokio = { workspace = true }
+tower-http = { workspace = true }
+
+[dev-dependencies]
+tower = { workspace = true }
+rand = { workspace = true }
+
+[[bin]]
+name = "mredis-web"
+path = "src/bin/mredis-web.rs"
+
+[[bin]]
+name = "mredis-bench"
+path = "src/bin/mredis-bench.rs"
